@@ -1,0 +1,381 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ebedf1 ;
+    font-size: 25px;
+    
+    
+}
+
+ html{
+    scroll-behavior: smooth;
+} 
+
+a{
+    text-decoration: non
+}
+a:hover{
+    color: rgb(170, 184, 235) !important;
+}
+
+ul{
+    list-style: none;
+
+}
+header{
+    height: 80px;
+    background-color: azure;
+}
+/* -----Header-----*/
+  .navbar-brand , .title{
+    background: -webkit-linear-gradient(90deg,#b9d1d1,#d896d9);
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}  
+ .navbar-brand:hover{
+    text-shadow: 5px 5px 20px rgb(81, 87, 89), -5px -5px 20px  rgb(88, 108, 113);
+} 
+.nav-link:hover{
+    font-weight: bolder;
+    text-shadow: 1px 1px 10px  rgb(172, 162, 172), -1px -1px 10px rgb(147, 140, 146);
+} 
+.nav-link:hover::first-letter{
+    font-size: larger;
+    color: rgb(148, 20, 120);
+}
+
+.dropdown-menu li a{
+    
+    text-shadow: 1px 1px 0px rgb(25, 85, 120);
+}
+.navbtn:hover{
+    opacity: 0.7;
+}
+/*Main*/
+.carousel-inner h1{
+    text-shadow: 1px 1px 5px #096975;
+}
+.carousel-inner .carousel-caption{
+    background: rgba(147, 202, 205, 0.5);
+    border-radius: 10px;
+}
+/*****************************************************aside****************************************/
+.aside-icon {
+    width: 80px;
+    height: 80px;
+    
+}
+.aside-icon a i{
+    text-align: center;
+    font-size: 60px;
+     line-height: 80px; 
+    
+}
+/****************************************************cards*********************************/
+
+.fixed-img {
+  
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+  
+  
+}
+.fixed-img1{
+  background-image: url(../img3/fixed1.jpg);
+  }
+
+  .fixed-img2{
+    background-image: url(../img3/fixed2.jpg);
+    }
+    
+  /***********************************************after******************************/
+  .row{
+    position: relative;
+  }
+  .shadow::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,.8);
+    opacity: 0;
+    transition: 1s;
+}       
+.shadow:hover::after{width: 100%;
+height: 100%;
+opacity: .6;
+
+
+}
+.shadow::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0,0,0,.8);
+    opacity: 0;
+    transition: 1s;
+}       
+.shadow:hover::before{width: 100%;
+height: 100%;
+opacity: .6;}
+
+/************************************************thank******************************************/
+
+    /*thank you*/
+    .wrapper {
+        margin: 10vh;
+        position: relative;
+      } 
+       .thankcard {
+        border: none;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        overflow: hidden;
+        border-radius: 20px;
+        min-height: 450px;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+        
+      } 
+      /* @media (max-width: 768px) {
+        .thankcard {
+          min-height: 350px;
+        }
+      } */
+      /* @media (max-width: 420px) {
+        .thankcard {
+          min-height: 300px;
+        }
+      } */
+       .card.card-has-bg {
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-position: center center;
+      } 
+     
+       .card.card-has-bg:hover {
+        transform: scale(0.9);
+        box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+        background-size: 130%;
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+      } 
+     
+       .card-hover:hover .card-body {
+        margin-top: 30px;
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+      } 
+       .card-hover .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        background: darkgray;
+        background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889356) 0%, #455f71 100%);
+      } 
+      
+/******************************post***********************************************************************/
+
+   .postcard {
+    height: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    box-shadow: -5px 5px 20px 10px rgb(201, 198, 241);
+  }
+  .postcard.dark {
+    background-color:rgba(83, 83, 83, 0.8);
+  }
+  .postcard.light {
+    background-color: #e1e5ea;
+  }
+  .postcard .t-dark {
+    color:rgba(83, 83, 83, 0.8);
+  }
+  .postcard a {
+    color: inherit;
+  }
+  .postcard h1, .postcard .h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .postcard .small {
+    font-size: 80%;
+  }
+  .postcard .postcard__title {
+    font-size: 1.75rem;
+  }
+  .postcard .postcard__img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  .postcard .postcard__img_link {
+    display: contents;
+  }
+  .postcard .postcard__bar {
+    width: 50px;
+    height: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color:black;
+    transition: width 0.2s ease;
+  }
+  .postcard .postcard__text {
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .postcard .postcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+  }
+  .postcard .postcard__tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .postcard .postcard__tagbox .tag__item {
+    display: inline-block;
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 2.5px 10px;
+    margin: 0 5px 5px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: background-color 0.5s;
+  }
+  .postcard .postcard__tagbox .tag__item:hover {
+    background: rgba(83, 83, 83, 0.8);
+  }
+  .postcard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+    opacity: 1;
+    border-radius: 10px;
+  }
+  .postcard:hover .postcard__bar {
+    width: 100px;
+  }
+  
+  @media screen and (min-width: 769px) {
+    .postcard {
+      flex-wrap: inherit;
+    }
+
+  
+    .postcard .postcard__title {
+      font-size: 2rem;
+    }
+    .postcard .postcard__tagbox {
+      justify-content: start;
+    }
+    .postcard .postcard__img {
+      max-width: 300px;
+      max-height: 100%;
+      transition: transform 0.3s ease;
+    }
+    .postcard .postcard__text {
+      padding: 3rem;
+      width: 100%;
+    }
+    .postcard .media.postcard__text:before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: #18151f;
+      top: -20%;
+      height: 130%;
+      width: 55px;
+    }
+    .postcard:hover .postcard__img {
+      transform: scale(1.1);
+    }
+    .postcard:nth-child(2n+1) {
+      flex-direction: row;
+    }
+    .postcard:nth-child(2n+0) {
+      flex-direction: row-reverse;
+    }
+    .postcard:nth-child(2n+1) .postcard__text::before {
+      left: -12px !important;
+      transform: rotate(4deg);
+    }
+    .postcard:nth-child(2n+0) .postcard__text::before {
+      right: -12px !important;
+      transform: rotate(-4deg);
+    
+  }
+  @media screen and (min-width: 1024px) 
+    .postcard__text {
+      padding: 2rem 3.5rem;
+    }
+  
+    .postcard__text:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -20%;
+      height: 130%;
+      width: 55px;
+    }
+  
+    .postcard.light .postcard__text:before {
+      background: #e1e5ea;
+    }
+    /**************************************color****************************************************************/
+
+     .logo-icon{
+      box-shadow: -5px -5px 20px 10px rgb(222, 218, 241);
+    }
+    .postcard .postcard__tagbox .green.play:hover {
+      background: #79dd09;
+      color: black;
+    }
+    
+   
+    
+     
+    .logoicon{
+      height:80px;
+      width: 80px;
+      box-shadow: -3px -3px 20px 10px rgb(201, 198, 241);
+      border-radius: 50%;
+      transition: 1s;
+  }
+  .logoicon:hover{
+      background-color: #26b8bd;
+      opacity: 0.7; */
+  }
+  
